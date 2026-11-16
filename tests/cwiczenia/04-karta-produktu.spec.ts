@@ -39,3 +39,29 @@ test('cena promocyjna kremu jest taka sama na kafelku, karcie produktu i w koszy
   await wiersz.getByRole('button', { name: 'Usuń: Krem do twarzy na dzień' }).click();
   await expect(wiersz).toHaveCount(0);
 });
+
+// Konto tester12 ma własny koszyk, więc ten test nie miesza się z testem na koncie tester11.
+test('kod CZARNY20 obniża sumę do zapłaty za krem do 21,11 zł', async ({ page }) => {
+  // Logowanie jako tester12 (to samo hasło co tester11).
+  await page.goto('/logowanie');
+  await page.getByLabel('Login').fill('tester12');
+  await page.getByLabel('Hasło').fill('czarny-piatek-2026');
+  await page.getByRole('button', { name: 'Zaloguj' }).click();
+
+  // Dodanie kremu do koszyka i przejście do koszyka.
+  await page.getByRole('button', { name: 'Dodaj do koszyka: Krem do twarzy na dzień' }).click();
+  await page.getByRole('link', { name: 'Koszyk' }).click();
+
+  // Wpisanie i zastosowanie kodu rabatowego.
+  await page.getByLabel('Kod rabatowy').fill('CZARNY20');
+  await page.getByRole('button', { name: 'Zastosuj kod' }).click();
+
+  // Komunikat o przyjęciu kodu i suma po rabacie: 26,39 zł - 20% = 21,11 zł.
+  // Sumę sprawdzamy po test id, bo na stronie jest kilka kwot (przed rabatem, rabat, razem).
+  await expect(page.getByRole('status')).toHaveText('Kod CZARNY20 przyjęty: -20% na całe zamówienie.');
+  await expect(page.getByTestId('cart-total')).toHaveText('21,11 zł');
+
+  // Sprzątanie: usuwamy kod i krem, żeby kolejne uruchomienie zaczynało od pustego koszyka.
+  await page.getByRole('button', { name: 'Usuń kod' }).click();
+  await page.getByRole('button', { name: 'Usuń: Krem do twarzy na dzień' }).click();
+});
