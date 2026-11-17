@@ -1,0 +1,385 @@
+- generic [active] [ref=f14e1]:
+  - banner [ref=f14e2]:
+    - generic [ref=f14e3]:
+      - link "namssor" [ref=f14e4] [cursor=pointer]:
+        - /url: /
+      - navigation "Menu główne" [ref=f14e8]:
+        - link "Produkty" [ref=f14e9] [cursor=pointer]:
+          - /url: /
+        - link "Koszyk" [ref=f14e10] [cursor=pointer]:
+          - /url: /koszyk
+        - link "Moje zamówienia" [ref=f14e11] [cursor=pointer]:
+          - /url: /zamowienia
+      - link "Zaloguj" [ref=f14e13] [cursor=pointer]:
+        - /url: /logowanie
+  - main [ref=f14e14]:
+    - heading "Produkty" [level=1] [ref=f14e15]
+    - search [ref=f14e16]:
+      - generic [ref=f14e17]:
+        - text: Szukaj produktu
+        - searchbox "Szukaj produktu" [ref=f14e18]
+      - generic [ref=f14e19]:
+        - text: Kategoria
+        - combobox "Kategoria" [ref=f14e20]:
+          - option "Wszystkie" [selected]
+          - option "Ciało"
+          - option "Dom"
+          - option "Dziecko"
+          - option "Higiena jamy ustnej"
+          - option "Twarz"
+          - option "Włosy"
+          - option "Święta"
+      - generic [ref=f14e21]:
+        - text: Sortuj
+        - combobox "Sortuj" [ref=f14e22]:
+          - option "Domyślnie" [selected]
+          - 'option "Cena: od najniższej"'
+          - 'option "Cena: od najwyższej"'
+          - 'option "Nazwa: A–Z"'
+      - button "Filtruj" [ref=f14e23] [cursor=pointer]
+    - paragraph [ref=f14e24]: "Liczba produktów: 21"
+    - table [ref=f14e25]:
+      - rowgroup [ref=f14e26]:
+        - row [ref=f14e27]:
+          - columnheader "Nazwa" [ref=f14e28]
+          - columnheader "Kategoria" [ref=f14e29]
+          - columnheader "Cena" [ref=f14e30]
+          - columnheader "Stan" [ref=f14e31]
+          - columnheader "Dostępność" [ref=f14e32]
+          - columnheader [ref=f14e33]
+      - rowgroup [ref=f14e34]:
+        - row [ref=f14e35]:
+          - cell "Balsam do ciała" [ref=f14e36]
+          - cell "Ciało" [ref=f14e37]
+          - cell "18,99 zł" [ref=f14e38]
+          - cell "79" [ref=f14e39]
+          - cell "Dostępny" [ref=f14e40]
+          - cell [ref=f14e41]:
+            - 'button "Dodaj do koszyka: Balsam do ciała" [ref=f14e43] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e44]:
+          - cell "Dezodorant w sprayu" [ref=f14e45]
+          - cell "Ciało" [ref=f14e46]
+          - cell "13,99 zł" [ref=f14e47]
+          - cell "0" [ref=f14e48]
+          - cell "Niedostępny" [ref=f14e49]
+          - cell [ref=f14e50]:
+            - 'button "Dodaj do koszyka: Dezodorant w sprayu" [disabled] [ref=f14e52]': Dodaj do koszyka
+        - row [ref=f14e53]:
+          - cell "Mydło w kostce" [ref=f14e54]
+          - cell "Ciało" [ref=f14e55]
+          - cell "4,99 zł" [ref=f14e56]
+          - cell "199" [ref=f14e57]
+          - cell "Dostępny" [ref=f14e58]
+          - cell [ref=f14e59]:
+            - 'button "Dodaj do koszyka: Mydło w kostce" [ref=f14e61] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e62]:
+          - cell "Żel pod prysznic" [ref=f14e63]
+          - cell "Ciało" [ref=f14e64]
+          - cell "9,99 zł" [ref=f14e65]
+          - cell "157" [ref=f14e66]
+          - cell "Dostępny" [ref=f14e67]
+          - cell [ref=f14e68]:
+            - 'button "Dodaj do koszyka: Żel pod prysznic" [ref=f14e70] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e71]:
+          - cell "Płyn do mycia naczyń" [ref=f14e72]
+          - cell "Dom" [ref=f14e73]
+          - cell "6,99 zł" [ref=f14e74]
+          - cell "180" [ref=f14e75]
+          - cell "Dostępny" [ref=f14e76]
+          - cell [ref=f14e77]:
+            - 'button "Dodaj do koszyka: Płyn do mycia naczyń" [ref=f14e79] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e80]:
+          - cell "Chusteczki nawilżane dla dzieci" [ref=f14e81]
+          - cell "Dziecko" [ref=f14e82]
+          - cell "7,99 zł" [ref=f14e83]
+          - cell "200" [ref=f14e84]
+          - cell "Dostępny" [ref=f14e85]
+          - cell [ref=f14e86]:
+            - 'button "Dodaj do koszyka: Chusteczki nawilżane dla dzieci" [ref=f14e88] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e89]:
+          - cell "Krem ochronny dla dzieci" [ref=f14e90]
+          - cell "Dziecko" [ref=f14e91]
+          - cell "14,99 zł" [ref=f14e92]
+          - cell "50" [ref=f14e93]
+          - cell "Dostępny" [ref=f14e94]
+          - cell [ref=f14e95]:
+            - 'button "Dodaj do koszyka: Krem ochronny dla dzieci" [ref=f14e97] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e98]:
+          - cell "Szampon dla dzieci" [ref=f14e99]
+          - cell "Dziecko" [ref=f14e100]
+          - cell "10,99 zł" [ref=f14e101]
+          - cell "64" [ref=f14e102]
+          - cell "Dostępny" [ref=f14e103]
+          - cell [ref=f14e104]:
+            - 'button "Dodaj do koszyka: Szampon dla dzieci" [ref=f14e106] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e107]:
+          - cell "Nić dentystyczna" [ref=f14e108]
+          - cell "Higiena jamy ustnej" [ref=f14e109]
+          - cell "6,99 zł" [ref=f14e110]
+          - cell "50" [ref=f14e111]
+          - cell "Dostępny" [ref=f14e112]
+          - cell [ref=f14e113]:
+            - 'button "Dodaj do koszyka: Nić dentystyczna" [ref=f14e115] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e116]:
+          - cell "Pasta do zębów" [ref=f14e117]
+          - cell "Higiena jamy ustnej" [ref=f14e118]
+          - cell "8,99 zł" [ref=f14e119]
+          - cell "140" [ref=f14e120]
+          - cell "Dostępny" [ref=f14e121]
+          - cell [ref=f14e122]:
+            - 'button "Dodaj do koszyka: Pasta do zębów" [ref=f14e124] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e125]:
+          - cell "Płyn do płukania jamy ustnej" [ref=f14e126]
+          - cell "Higiena jamy ustnej" [ref=f14e127]
+          - cell "16,99 zł" [ref=f14e128]
+          - cell "56" [ref=f14e129]
+          - cell "Dostępny" [ref=f14e130]
+          - cell [ref=f14e131]:
+            - 'button "Dodaj do koszyka: Płyn do płukania jamy ustnej" [ref=f14e133] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e134]:
+          - cell "Szczoteczka do zębów" [ref=f14e135]
+          - cell "Higiena jamy ustnej" [ref=f14e136]
+          - cell "7,99 zł" [ref=f14e137]
+          - cell "112" [ref=f14e138]
+          - cell "Dostępny" [ref=f14e139]
+          - cell [ref=f14e140]:
+            - 'button "Dodaj do koszyka: Szczoteczka do zębów" [ref=f14e142] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e143]:
+          - cell "Krem do twarzy na dzień" [ref=f14e144]
+          - cell "Twarz" [ref=f14e145]
+          - cell "32,99 zł 26,39 zł" [ref=f14e146]
+          - cell "60" [ref=f14e147]
+          - cell "Dostępny" [ref=f14e148]
+          - cell [ref=f14e149]:
+            - 'button "Dodaj do koszyka: Krem do twarzy na dzień" [ref=f14e151] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e152]:
+          - cell "Maseczka glinkowa" [ref=f14e153]
+          - cell "Twarz" [ref=f14e154]
+          - cell "8,99 zł" [ref=f14e155]
+          - cell "88" [ref=f14e156]
+          - cell "Dostępny" [ref=f14e157]
+          - cell [ref=f14e158]:
+            - 'button "Dodaj do koszyka: Maseczka glinkowa" [ref=f14e160] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e161]:
+          - cell "Płyn micelarny" [ref=f14e162]
+          - cell "Twarz" [ref=f14e163]
+          - cell "15,99 zł" [ref=f14e164]
+          - cell "120" [ref=f14e165]
+          - cell "Dostępny" [ref=f14e166]
+          - cell [ref=f14e167]:
+            - 'button "Dodaj do koszyka: Płyn micelarny" [ref=f14e169] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e170]:
+          - cell "Serum z witaminą C" [ref=f14e171]
+          - cell "Twarz" [ref=f14e172]
+          - cell "49,99 zł 39,99 zł" [ref=f14e173]
+          - cell "0" [ref=f14e174]
+          - cell "Niedostępny" [ref=f14e175]
+          - cell [ref=f14e176]:
+            - 'button "Dodaj do koszyka: Serum z witaminą C" [disabled] [ref=f14e178]': Dodaj do koszyka
+        - row [ref=f14e179]:
+          - cell "Lakier do włosów" [ref=f14e180]
+          - cell "Włosy" [ref=f14e181]
+          - cell "11,99 zł" [ref=f14e182]
+          - cell "50" [ref=f14e183]
+          - cell "Dostępny" [ref=f14e184]
+          - cell [ref=f14e185]:
+            - 'button "Dodaj do koszyka: Lakier do włosów" [ref=f14e187] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e188]:
+          - cell "Maska do włosów z olejem arganowym" [ref=f14e189]
+          - cell "Włosy" [ref=f14e190]
+          - cell "24,99 zł" [ref=f14e191]
+          - cell "0" [ref=f14e192]
+          - cell "Niedostępny" [ref=f14e193]
+          - cell [ref=f14e194]:
+            - 'button "Dodaj do koszyka: Maska do włosów z olejem arganowym" [disabled] [ref=f14e196]': Dodaj do koszyka
+        - row [ref=f14e197]:
+          - cell "Odżywka do włosów" [ref=f14e198]
+          - cell "Włosy" [ref=f14e199]
+          - cell "14,99 zł 11,99 zł" [ref=f14e200]
+          - cell "70" [ref=f14e201]
+          - cell "Dostępny" [ref=f14e202]
+          - cell [ref=f14e203]:
+            - 'button "Dodaj do koszyka: Odżywka do włosów" [ref=f14e205] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e206]:
+          - cell "Szampon nawilżający" [ref=f14e207]
+          - cell "Włosy" [ref=f14e208]
+          - cell "12,99 zł" [ref=f14e209]
+          - cell "100" [ref=f14e210]
+          - cell "Dostępny" [ref=f14e211]
+          - cell [ref=f14e212]:
+            - 'button "Dodaj do koszyka: Szampon nawilżający" [ref=f14e214] [cursor=pointer]': Dodaj do koszyka
+        - row [ref=f14e215]:
+          - cell "Kalendarz adwentowy 2026" [ref=f14e216]
+          - cell "Święta" [ref=f14e217]
+          - cell "39,99 zł" [ref=f14e218]
+          - cell "2000" [ref=f14e219]
+          - cell "Dostępny" [ref=f14e220]
+          - cell [ref=f14e221]:
+            - 'button "Dodaj do koszyka: Kalendarz adwentowy 2026" [ref=f14e223] [cursor=pointer]': Dodaj do koszyka
+    - region "Oferta na Czarny Piątek" [ref=f14e224]:
+      - heading "Oferta na Czarny Piątek" [level=2] [ref=f14e225]
+      - paragraph [ref=f14e226]: Czarny Piątek w Namssorze startuje 27.11.2026. Do startu promocji zostało 10 dni.
+      - generic [ref=f14e227]:
+        - article [ref=f14e228]:
+          - heading [level=3] [ref=f14e229]:
+            - link "Balsam do ciała" [ref=f14e230] [cursor=pointer]:
+              - /url: /produkt/10
+          - paragraph [ref=f14e231]: Ciało
+          - paragraph [ref=f14e232]: 18,99 zł
+          - paragraph [ref=f14e233]: Dostępny
+        - article [ref=f14e234]:
+          - heading [level=3] [ref=f14e235]:
+            - link "Dezodorant w sprayu" [ref=f14e236] [cursor=pointer]:
+              - /url: /produkt/12
+          - paragraph [ref=f14e237]: Ciało
+          - paragraph [ref=f14e238]: 13,99 zł
+          - paragraph [ref=f14e239]: Niedostępny
+        - article [ref=f14e240]:
+          - heading [level=3] [ref=f14e241]:
+            - link "Mydło w kostce" [ref=f14e242] [cursor=pointer]:
+              - /url: /produkt/11
+          - paragraph [ref=f14e243]: Ciało
+          - paragraph [ref=f14e244]: 4,99 zł
+          - paragraph [ref=f14e245]: Dostępny
+        - article [ref=f14e246]:
+          - heading [level=3] [ref=f14e247]:
+            - link "Żel pod prysznic" [ref=f14e248] [cursor=pointer]:
+              - /url: /produkt/9
+          - paragraph [ref=f14e249]: Ciało
+          - paragraph [ref=f14e250]: 9,99 zł
+          - paragraph [ref=f14e251]: Dostępny
+        - article [ref=f14e252]:
+          - heading [level=3] [ref=f14e253]:
+            - link "Płyn do mycia naczyń" [ref=f14e254] [cursor=pointer]:
+              - /url: /produkt/20
+          - paragraph [ref=f14e255]: Dom
+          - paragraph [ref=f14e256]: 6,99 zł
+          - paragraph [ref=f14e257]: Dostępny
+        - article [ref=f14e258]:
+          - heading [level=3] [ref=f14e259]:
+            - link "Chusteczki nawilżane dla dzieci" [ref=f14e260] [cursor=pointer]:
+              - /url: /produkt/17
+          - paragraph [ref=f14e261]: Dziecko
+          - paragraph [ref=f14e262]: 7,99 zł
+          - paragraph [ref=f14e263]: Dostępny
+        - article [ref=f14e264]:
+          - heading [level=3] [ref=f14e265]:
+            - link "Krem ochronny dla dzieci" [ref=f14e266] [cursor=pointer]:
+              - /url: /produkt/19
+          - paragraph [ref=f14e267]: Dziecko
+          - paragraph [ref=f14e268]: 14,99 zł
+          - paragraph [ref=f14e269]: Dostępny
+        - article [ref=f14e270]:
+          - heading [level=3] [ref=f14e271]:
+            - link "Szampon dla dzieci" [ref=f14e272] [cursor=pointer]:
+              - /url: /produkt/18
+          - paragraph [ref=f14e273]: Dziecko
+          - paragraph [ref=f14e274]: 10,99 zł
+          - paragraph [ref=f14e275]: Dostępny
+        - article [ref=f14e276]:
+          - heading [level=3] [ref=f14e277]:
+            - link "Nić dentystyczna" [ref=f14e278] [cursor=pointer]:
+              - /url: /produkt/16
+          - paragraph [ref=f14e279]: Higiena jamy ustnej
+          - paragraph [ref=f14e280]: 6,99 zł
+          - paragraph [ref=f14e281]: Dostępny
+        - article [ref=f14e282]:
+          - heading [level=3] [ref=f14e283]:
+            - link "Pasta do zębów" [ref=f14e284] [cursor=pointer]:
+              - /url: /produkt/13
+          - paragraph [ref=f14e285]: Higiena jamy ustnej
+          - paragraph [ref=f14e286]: 8,99 zł
+          - paragraph [ref=f14e287]: Dostępny
+        - article [ref=f14e288]:
+          - heading [level=3] [ref=f14e289]:
+            - link "Płyn do płukania jamy ustnej" [ref=f14e290] [cursor=pointer]:
+              - /url: /produkt/15
+          - paragraph [ref=f14e291]: Higiena jamy ustnej
+          - paragraph [ref=f14e292]: 16,99 zł
+          - paragraph [ref=f14e293]: Dostępny
+        - article [ref=f14e294]:
+          - heading [level=3] [ref=f14e295]:
+            - link "Szczoteczka do zębów" [ref=f14e296] [cursor=pointer]:
+              - /url: /produkt/14
+          - paragraph [ref=f14e297]: Higiena jamy ustnej
+          - paragraph [ref=f14e298]: 7,99 zł
+          - paragraph [ref=f14e299]: Dostępny
+        - article [ref=f14e300]:
+          - heading [level=3] [ref=f14e301]:
+            - link "Krem do twarzy na dzień" [ref=f14e302] [cursor=pointer]:
+              - /url: /produkt/5
+          - paragraph [ref=f14e303]: Twarz
+          - paragraph [ref=f14e304]:
+            - text: 32,99 zł 26,39 zł
+            - generic [ref=f14e305]: "-20%"
+          - paragraph [ref=f14e306]: Dostępny
+        - article [ref=f14e307]:
+          - heading [level=3] [ref=f14e308]:
+            - link "Maseczka glinkowa" [ref=f14e309] [cursor=pointer]:
+              - /url: /produkt/8
+          - paragraph [ref=f14e310]: Twarz
+          - paragraph [ref=f14e311]: 8,99 zł
+          - paragraph [ref=f14e312]: Dostępny
+        - article [ref=f14e313]:
+          - heading [level=3] [ref=f14e314]:
+            - link "Płyn micelarny" [ref=f14e315] [cursor=pointer]:
+              - /url: /produkt/6
+          - paragraph [ref=f14e316]: Twarz
+          - paragraph [ref=f14e317]: 15,99 zł
+          - paragraph [ref=f14e318]: Dostępny
+        - article [ref=f14e319]:
+          - heading [level=3] [ref=f14e320]:
+            - link "Serum z witaminą C" [ref=f14e321] [cursor=pointer]:
+              - /url: /produkt/7
+          - paragraph [ref=f14e322]: Twarz
+          - paragraph [ref=f14e323]:
+            - text: 49,99 zł 39,99 zł
+            - generic [ref=f14e324]: "-20%"
+          - paragraph [ref=f14e325]: Niedostępny
+        - article [ref=f14e326]:
+          - heading [level=3] [ref=f14e327]:
+            - link "Lakier do włosów" [ref=f14e328] [cursor=pointer]:
+              - /url: /produkt/4
+          - paragraph [ref=f14e329]: Włosy
+          - paragraph [ref=f14e330]: 11,99 zł
+          - paragraph [ref=f14e331]: Dostępny
+        - article [ref=f14e332]:
+          - heading [level=3] [ref=f14e333]:
+            - link "Maska do włosów z olejem arganowym" [ref=f14e334] [cursor=pointer]:
+              - /url: /produkt/3
+          - paragraph [ref=f14e335]: Włosy
+          - paragraph [ref=f14e336]: 24,99 zł
+          - paragraph [ref=f14e337]: Niedostępny
+        - article [ref=f14e338]:
+          - heading [level=3] [ref=f14e339]:
+            - link "Odżywka do włosów" [ref=f14e340] [cursor=pointer]:
+              - /url: /produkt/2
+          - paragraph [ref=f14e341]: Włosy
+          - paragraph [ref=f14e342]:
+            - text: 14,99 zł 11,99 zł
+            - generic [ref=f14e343]: "-20%"
+          - paragraph [ref=f14e344]: Dostępny
+        - article [ref=f14e345]:
+          - heading [level=3] [ref=f14e346]:
+            - link "Szampon nawilżający" [ref=f14e347] [cursor=pointer]:
+              - /url: /produkt/1
+          - paragraph [ref=f14e348]: Włosy
+          - paragraph [ref=f14e349]: 12,99 zł
+          - paragraph [ref=f14e350]: Dostępny
+        - article [ref=f14e351]:
+          - heading [level=3] [ref=f14e352]:
+            - link "Kalendarz adwentowy 2026" [ref=f14e353] [cursor=pointer]:
+              - /url: /produkt/21
+          - paragraph [ref=f14e354]: Święta
+          - paragraph [ref=f14e355]: 39,99 zł
+          - paragraph [ref=f14e356]: Dostępny
+  - contentinfo [ref=f14e357]:
+    - generic [ref=f14e358]: Namssor to fikcyjna drogeria do ćwiczeń z automatyzacji testów. Dane są przykładowe.
+    - generic [ref=f14e359]:
+      - text: Grzegorz Brzezinka, Prosit AS,
+      - link "https://agentgreg.ai" [ref=f14e360] [cursor=pointer]:
+        - /url: https://agentgreg.ai
+    - link "Regulamin" [ref=f14e361] [cursor=pointer]:
+      - /url: /regulamin
+    - link "API" [ref=f14e362] [cursor=pointer]:
+      - /url: /api/docs

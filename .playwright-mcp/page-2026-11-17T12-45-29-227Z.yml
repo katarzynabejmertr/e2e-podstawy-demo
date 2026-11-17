@@ -1,0 +1,60 @@
+- generic [active] [ref=f19e1]:
+  - banner [ref=f19e2]:
+    - generic [ref=f19e3]:
+      - link "namssor" [ref=f19e4] [cursor=pointer]:
+        - /url: /
+      - navigation "Menu główne" [ref=f19e8]:
+        - link "Produkty" [ref=f19e9] [cursor=pointer]:
+          - /url: /
+        - link "Koszyk" [ref=f19e10] [cursor=pointer]:
+          - /url: /koszyk
+        - link "Moje zamówienia" [ref=f19e11] [cursor=pointer]:
+          - /url: /zamowienia
+        - link "Adres dostawy" [ref=f19e12] [cursor=pointer]:
+          - /url: /konto/adres
+        - link "Moje adresy" [ref=f19e13] [cursor=pointer]:
+          - /url: /konto/adresy
+      - generic [ref=f19e14]:
+        - generic [ref=f19e15]: Zalogowano jako biuro (user)
+        - button "Wyloguj" [ref=f19e17] [cursor=pointer]
+  - main [ref=f19e18]:
+    - paragraph [ref=f19e19]:
+      - link "← Moje zamówienia" [ref=f19e20] [cursor=pointer]:
+        - /url: /zamowienia
+    - heading "Zamówienie ZAM-1007" [level=1] [ref=f19e21]
+    - generic [ref=f19e22]:
+      - paragraph [ref=f19e23]:
+        - text: "Status:"
+        - strong [ref=f19e24]: Opłacone
+      - paragraph [ref=f19e25]: "Data: 2026-11-02 08:00"
+      - table [ref=f19e26]:
+        - rowgroup [ref=f19e27]:
+          - row [ref=f19e28]:
+            - columnheader "Produkt" [ref=f19e29]
+            - columnheader "Cena" [ref=f19e30]
+            - columnheader "Ilość" [ref=f19e31]
+            - columnheader "Wartość" [ref=f19e32]
+        - rowgroup [ref=f19e33]:
+          - row [ref=f19e34]:
+            - cell "Kalendarz adwentowy 2026" [ref=f19e35]
+            - cell "39,99 zł" [ref=f19e36]
+            - cell "1000" [ref=f19e37]
+            - cell "39990,00 zł" [ref=f19e38]
+      - paragraph [ref=f19e39]: "Adres dostawy: ul. Reniferowa 24, 24-120 Gwiazdkowo"
+      - paragraph [ref=f19e40]:
+        - text: "Faktura na firmę:"
+        - strong [ref=f19e41]: Biuro Mikołaja
+        - text: ", NIP 2412241228"
+      - paragraph [ref=f19e42]:
+        - link "Pobierz fakturę" [ref=f19e43] [cursor=pointer]:
+          - /url: /zamowienia/ZAM-1007/faktura
+  - contentinfo [ref=f19e44]:
+    - generic [ref=f19e45]: Namssor to fikcyjna drogeria do ćwiczeń z automatyzacji testów. Dane są przykładowe.
+    - generic [ref=f19e46]:
+      - text: Grzegorz Brzezinka, Prosit AS,
+      - link "https://agentgreg.ai" [ref=f19e47] [cursor=pointer]:
+        - /url: https://agentgreg.ai
+    - link "Regulamin" [ref=f19e48] [cursor=pointer]:
+      - /url: /regulamin
+    - link "API" [ref=f19e49] [cursor=pointer]:
+      - /url: /api/docs

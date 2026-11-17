@@ -1,0 +1,45 @@
+- generic [active] [ref=f17e1]:
+  - banner [ref=f17e2]:
+    - generic [ref=f17e3]:
+      - link "namssor" [ref=f17e4] [cursor=pointer]:
+        - /url: /
+      - navigation "Menu główne" [ref=f17e8]:
+        - link "Produkty" [ref=f17e9] [cursor=pointer]:
+          - /url: /
+        - link "Koszyk" [ref=f17e10] [cursor=pointer]:
+          - /url: /koszyk
+        - link "Moje zamówienia" [ref=f17e11] [cursor=pointer]:
+          - /url: /zamowienia
+        - link "Adres dostawy" [ref=f17e12] [cursor=pointer]:
+          - /url: /konto/adres
+        - link "Moje adresy" [ref=f17e13] [cursor=pointer]:
+          - /url: /konto/adresy
+      - generic [ref=f17e14]:
+        - generic [ref=f17e15]: Zalogowano jako biuro (user)
+        - button "Wyloguj" [ref=f17e17] [cursor=pointer]
+  - main [ref=f17e18]:
+    - paragraph [ref=f17e19]:
+      - link "← Wszystkie produkty" [ref=f17e20] [cursor=pointer]:
+        - /url: /
+    - paragraph [ref=f17e21]: Czarny Piątek w Namssorze startuje 27.11.2026. Do startu promocji zostało 10 dni.
+    - article [ref=f17e22]:
+      - heading "Kalendarz adwentowy 2026" [level=1] [ref=f17e23]
+      - paragraph [ref=f17e24]: "Kategoria: Święta"
+      - paragraph [ref=f17e25]: Kalendarz z 24 okienkami i kosmetykami w miniaturze. Edycja 2026.
+      - paragraph [ref=f17e26]: 39,99 zł
+      - paragraph [ref=f17e27]: Dostępny (2000 szt.)
+      - generic [ref=f17e28]:
+        - generic [ref=f17e29]:
+          - text: Ilość
+          - spinbutton "Ilość" [ref=f17e30]: "1"
+        - button "Dodaj do koszyka" [ref=f17e31] [cursor=pointer]
+  - contentinfo [ref=f17e32]:
+    - generic [ref=f17e33]: Namssor to fikcyjna drogeria do ćwiczeń z automatyzacji testów. Dane są przykładowe.
+    - generic [ref=f17e34]:
+      - text: Grzegorz Brzezinka, Prosit AS,
+      - link "https://agentgreg.ai" [ref=f17e35] [cursor=pointer]:
+        - /url: https://agentgreg.ai
+    - link "Regulamin" [ref=f17e36] [cursor=pointer]:
+      - /url: /regulamin
+    - link "API" [ref=f17e37] [cursor=pointer]:
+      - /url: /api/docs

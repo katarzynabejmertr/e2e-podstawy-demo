@@ -8,5 +8,6 @@ test('wyszukiwarka znajduje szampon nawilżający', async ({ page }) => {
   await page.getByLabel('Szukaj produktu').fill('szampon');
   await page.getByRole('button', { name: 'Filtruj' }).click();
 
-  await expect(page.getByRole('cell', { name: 'Szampon' })).toBeVisible();
+  // Pełna nazwa z wymagania i exact: true, bo samo „Szampon” pasuje też do „Szampon dla dzieci”
+  await expect(page.getByRole('cell', { name: 'Szampon nawilżający', exact: true })).toBeVisible();
 });
