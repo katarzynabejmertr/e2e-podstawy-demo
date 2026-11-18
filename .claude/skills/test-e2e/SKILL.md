@@ -9,7 +9,7 @@ Wykonaj kroki po kolei i nie pomijaj żadnego. Zasady pisania kodu są w `CLAUDE
 
 1. Przeczytaj przypadek testowy albo scenariusz od użytkownika i wypisz zdania wymagania, które test ma sprawdzić.
 2. Przejdź scenariusz w działającej aplikacji (http://localhost:4100) i zanotuj prawdziwe nazwy przycisków, pól i komunikatów.
-3. Pokaż plan: nazwę pliku w `tests/cwiczenia/`, konto, kroki, asercje i to, skąd bierzesz każdą oczekiwaną wartość, a potem poczekaj na akceptację.
+3. Pokaż plan: nazwę pliku w `tests/cwiczenia/`, konto (logowanie przez `zaloguj` z `tests/pomocnicze/logowanie.ts`, inne konto: `zaloguj(page, 'admin', 'admin123')`), kroki, asercje i to, skąd bierzesz każdą oczekiwaną wartość, a potem poczekaj na akceptację.
 4. Napisz test zgodnie z zaakceptowanym planem i uruchom `npm run typecheck`.
 5. Uruchom test dwa razy pod rząd poleceniem `npx playwright test <plik>` i pokaż oba wyniki.
 6. Zmień na chwilę oczekiwaną wartość, uruchom test, pokaż `1 failed`, przywróć wartość i pokaż `1 passed`.

@@ -6,6 +6,7 @@ Testy czytają i oceniają testerzy, którzy dopiero uczą się kodu. Pisz prost
 ## Kod testu
 - Importuj wyłącznie `import { test, expect } from '@playwright/test';`.
 - Bez Page Object, własnych fixtures i funkcji pomocniczych, chyba że użytkownik o nie poprosi.
+- Wyjątek: do logowania w UI używaj `zaloguj(page)`, a w testach API `zalogujPrzezApi(request)` z `tests/pomocnicze/logowanie.ts`. Nie wpisuj loginu ani hasła w teście. Inne konto: `await zaloguj(page, 'admin', 'admin123');`.
 - Lokatory w tej kolejności: `getByRole`, `getByLabel`, `getByText`, dopiero potem `getByTestId`.
   Nie używaj selektorów CSS i XPath, `id` ani klas.
 - Wiersz tabeli znajdź po treści: `page.getByRole('row').filter({ hasText: 'ZAM-1003' })`.
