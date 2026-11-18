@@ -1,5 +1,14 @@
 import { defineConfig, devices } from '@playwright/test';
 
+// Zmienne z pliku .env (np. APP_USER i APP_PASSWORD dla funkcji zaloguj).
+// Zmienna ustawiona w terminalu ($env:APP_USER=...) ma pierwszeństwo przed plikiem.
+// Gdy pliku .env nie ma, testy używają wartości domyślnych.
+try {
+  process.loadEnvFile('.env');
+} catch {
+  // brak pliku .env
+}
+
 // Konfiguracja Playwright. Dokumentacja: https://playwright.dev/docs/test-configuration
 export default defineConfig({
   // Gdzie są testy.
