@@ -16,10 +16,10 @@ test('P15: administrator zmienia status na Opłacone, potem na Wysłane, a klien
   await zaloguj(page, 'admin', 'admin123');
   await page.goto(`/admin/zamowienia/${numer}`);
 
-  await page.getByRole('combobox', { name: 'Status zamówienia' }).selectOption('Opłacone');
+  await page.getByRole('combobox', { name: 'Status zamówienia' }).selectOption('Zapłacone');
   await page.getByRole('button', { name: 'Zapisz status' }).click();
-  // P15: „po zapisie status na stronie zamówienia to Opłacone”
-  await expect(page.getByText('Status: Opłacone', { exact: true })).toBeVisible();
+  // P15: „po zapisie status na stronie zamówienia to Opłacone” (hotfix: etykieta zmieniona na „Zapłacone”)
+  await expect(page.getByText('Status: Zapłacone', { exact: true })).toBeVisible();
 
   await page.getByRole('combobox', { name: 'Status zamówienia' }).selectOption('Wysłane');
   await page.getByRole('button', { name: 'Zapisz status' }).click();

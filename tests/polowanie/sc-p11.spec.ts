@@ -26,7 +26,7 @@ test.describe('P11: kod rabatowy w koszyku', () => {
 
   test('kod CZARNY20 jest przyjęty i pod sumą jest linia z rabatem', async ({ page }) => {
     await page.getByLabel('Kod rabatowy').fill('CZARNY20');
-    await page.getByRole('button', { name: 'Zastosuj kod' }).click();
+    await page.getByRole('button', { name: 'Użyj kodu' }).click();
 
     // P11: „komunikat Kod CZARNY20 przyjęty: -20% na całe zamówienie.”
     await expect(page.getByRole('status')).toHaveText('Kod CZARNY20 przyjęty: -20% na całe zamówienie.');
@@ -37,7 +37,7 @@ test.describe('P11: kod rabatowy w koszyku', () => {
 
   test('kod NIEMA jest odrzucony i nie ma rabatu', async ({ page }) => {
     await page.getByLabel('Kod rabatowy').fill('NIEMA');
-    await page.getByRole('button', { name: 'Zastosuj kod' }).click();
+    await page.getByRole('button', { name: 'Użyj kodu' }).click();
 
     // P11: „komunikat Nie ma takiego kodu rabatowego: NIEMA”
     await expect(page.getByRole('alert')).toHaveText('Nie ma takiego kodu rabatowego: NIEMA');
@@ -47,7 +47,7 @@ test.describe('P11: kod rabatowy w koszyku', () => {
 
   test('kod WLOSY15 bez produktów z kategorii Włosy jest odrzucony z wyjaśnieniem', async ({ page }) => {
     await page.getByLabel('Kod rabatowy').fill('WLOSY15');
-    await page.getByRole('button', { name: 'Zastosuj kod' }).click();
+    await page.getByRole('button', { name: 'Użyj kodu' }).click();
 
     // P11: „komunikat Kod WLOSY15 działa tylko na produkty z kategorii Włosy. W koszyku nie ma takich produktów.”
     await expect(page.getByRole('alert')).toHaveText(

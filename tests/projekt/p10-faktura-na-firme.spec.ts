@@ -51,7 +51,7 @@ test.describe('P10: zamówienie na firmę i faktura', () => {
     await expect(page.getByText('Faktura na firmę: Biuro Mikołaja, NIP 1012023036', { exact: true })).toBeVisible();
 
     const pobieranie = page.waitForEvent('download');
-    await page.getByRole('link', { name: 'Pobierz fakturę' }).click();
+    await page.getByRole('link', { name: 'Faktura (HTML)' }).click();
     const plik = await pobieranie;
     // P10: „Pobierz fakturę pobiera plik faktura-ZAM-….html”
     expect(plik.suggestedFilename()).toBe(`faktura-${numer}.html`);

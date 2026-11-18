@@ -13,7 +13,7 @@ test('błędny kod pocztowy blokuje zapis adresu', async ({ page }) => {
   // Formularz „Adres dostawy” z kodem bez myślnika
   await page.getByRole('link', { name: 'Adres dostawy' }).click();
   await page.getByRole('textbox', { name: 'Kod pocztowy' }).fill('00000');
-  await page.getByRole('button', { name: 'Zapisz adres' }).click();
+  await page.getByRole('button', { name: 'Zapisz', exact: true }).click();
 
   // Podsumowanie błędów nad formularzem: błędne jest tylko jedno pole
   await expect(page.getByRole('alert')).toHaveText('Popraw błędy w formularzu (1).');
